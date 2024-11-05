@@ -70,6 +70,9 @@ a {
 }
 
 .hero-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     position: relative;
     background: #E6F0FF;
     height: calc(100vh - 90px);
@@ -114,15 +117,14 @@ a {
     margin-left: 18px;
 }
 
-.hero {
-    padding-top: 130px;
-}
 
-.hero .info {
+
+
+.hero-wrap .info {
     width: 51%;
 }
 
-.hero .sub-title {
+.hero-wrap .sub-title {
     color: #687690;
     font-size: 1.8rem;
     font-weight: 500;
@@ -130,7 +132,7 @@ a {
     letter-spacing: 0.018rem;
 }
 
-.hero .title {
+.hero-wrap .title {
     margin-top: 8px;
     color: #000336;
     font-family: Poppins;
@@ -140,7 +142,7 @@ a {
     /* 118.75% */
 }
 
-.hero .desc {
+.hero-wrap .desc {
     margin-top: 30px;
     color: #5a6473;
     font-family: Poppins;
